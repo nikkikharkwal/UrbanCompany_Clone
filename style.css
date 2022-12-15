@@ -54,3 +54,57 @@
     font-weight: 600;
     font-family: axiforma-semiBold,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   }
+  .searchbox {
+    border: 1px solid red;
+    width: 600px;
+    height: 54px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchbox2 {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 3%;
+  }
+  .categories {
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+  }
+  .categories > a {
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 200;
+  }
+  .category_1 {
+    display: flex;
+    margin: auto;
+    width: 900px;
+    border: none;
+    height: 250px;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .button_1 {
+    margin: auto;
+    margin-left: 20px;
+    width: 80%;
+  }
+  .button_1:hover {
+    background-color: #f2f4f6;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .button_1  img {
+    margin-left: 35px;
+  }
+  .middle-heading {
+    text-align: center;
+    margin-top: 180px;
+    font-weight: 700;
+    font-family: axiforma-regular,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
