@@ -4,66 +4,244 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rural Company</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Urban Company</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheet/footer.css" />
+    <link rel="icon" href="./images/UC_titlelogo.png">
+    <link rel="stylesheet" href="./stylesheet/index.css" />
   </head>
   <body>
-    <div id="background">
+    <header>
       <div id="navbar">
-        <div>
-          <a href=""><img src="./images/RuralLogo-removebg-preview.png" alt="Error" /></a>
+        <div id="logo">
+          <img src="./images/UrbanLogo.png" alt="Error" />
         </div>
-        <div class="right-navbar">
-          <a href="" target="_blank">Blog</a>
-          <a href="" target="_blank" id="register">Register As A Professional</a>
-          <a href="" target="_blank">Help Center</a>
-          <a href="" target="_blank">Login/Sign Up</a>
+        <div id="box">
+          <div><a href="#">Register As A Professional</a></div>
+          <div><a href="help.html">Help Center</a></div>
+          <span id="sign">Login / Sign Up</span>
+          <div id="sout"></div>
+          <div id="mybook"></div>
+          <div id="logout"></div>
         </div>
-      </div>
-      <h5 class="center-location"><a href="">Home</a> &nbsp; / &nbsp;<a href="">Delhi-Ncr</a> </h5>
-      <h1 class="slogan">Home services, on demand.</h1>
-<!-- Search Bar -->
-      <div class="searchbox">
-        <select name="" id="location-search">
-          <option value="DELHI">&#127470;&#127475; Delhi-NCR</option>
-        </select>
-        <input type="text" placeholder="Search for services" class="searchbox2">
       </div>
 
-      <div class="categories">
-        <a href="">Women's Therapies,</a>&nbsp;
-        <a href="">Salon for Men,</a>&nbsp;
-        <a href="">Men's Therapies</a>
-        <p><b>etc</b></p>
-    </div>
-    <div class="category_1">
-      <div id="point" class=button_1>
-          <img src="./images/categories/salonwomen.jpg" alt="Error">
-          <p>Salon For Women</p>
+      <!-- Banner Section -->
+
+      <div id="banner">
+        <div id="ban-image">
+          <div id="back"></div>
+          <img id="image" src="./images/index/indexherobanner.jpg" alt="" />
+        </div>
+        <div id="ban-right">
+          <div id="section">
+            <div><span>URBAN COMPANY</span></div>
+
+            <h1>Quality Home Services, on Demand</h1>
+            <p>
+              Experienced, Hand picked Professionals to serve you at your door
+              step
+            </p>
+            <div id="loc-div">
+              <p>Where do you need a service?</p>
+              <select name="" id="select">
+                <option value="">Select Your City</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Dehradun">Dehradun</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Agra">Agra</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Jodhpur">Jodhpur</option>
+                <option value="Patna">Patna</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
-  
-      <div class=button_1>
-          <img src="./images/categories/hairskin.jpg" alt="Error">
-         <p>Hair , Skin & Nails</p>
+      <!-- Login Section -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"
+          >&times; Please Login To Continue</a
+        >
+        <hr />
+        <div id="phone">
+          <div>
+            <p>+91</p>
+          </div>
+          <div>
+            <input type="text" placeholder="Enter Mobile Number" id="mobile" />
+          </div>
+        </div>
+        <button id="btn">Continue</button>
       </div>
-  
-      <div class=button_1>
-          <img src="./images/categories/womentherapy.jpg" alt="Error">
-          <p>Women's Therapies</p>
+
+      <div id="mySidenav2" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn2"
+          >&times; Please Enter OTP to Continue</a
+        >
+        <hr />
+        <div id="textotp">
+          <h2>Enter verification code</h2>
+          <p>
+            We Have Send you a 4 Digit OTP <br /><span id="edit"
+              >Edit Mobile Number</span
+            >
+          </p>
+        </div>
+        <div id="otp">
+          <input id="validotp" type="text" />
+        </div>
+        <div id="time"></div>
+        <button id="btn" onclick="login2()">Login</button>
       </div>
-  
-      <div class=button_1>
-          <img src="./images/categories/salonmen.png" alt="Error">
-          <p>Salon For Men</p>
+    </header>
+    <main>
+      <div id="cont">
+        <div id="mid1">
+          <h1>Why Urban Company</h1>
+          <div id="list">
+            <ul type="none">
+              <li>
+                <div>
+                  <img
+                    src="./images/index/transparentpricing.jpg"
+                    alt="Error"
+                  />
+                </div>
+                <section>
+                  <h3>Transparent pricing</h3>
+                  <p>See fixed prices before you book.</p>
+                </section>
+              </li>
+              <li>
+                <div>
+                  <img src="./images/index/expertsonly.jpg" alt="Error" />
+                </div>
+                <section>
+                  <h3>Experts only</h3>
+                  <p>
+                    Our professionals are well trained and have on-job
+                    expertise.
+                  </p>
+                </section>
+              </li>
+              <li>
+                <div>
+                  <img src="./images/index/fullyequipped.jpg" alt="Error" />
+                </div>
+                <section>
+                  <h3>Fully equipped</h3>
+                  <p>We bring everything needed to get the job done well.</p>
+                </section>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="mid2">
+          <div>
+            <div>
+              <img src="./images/index/qualityassured.jpg" alt="Error" />
+            </div>
+            <h1>100% Quality Assured</h1>
+            <p>If you don’t love our service, we will make it right.</p>
+          </div>
+        </div>
       </div>
-  
-      <div class=button_1>
-          <img src="./images/categories/mentherapy.jpg" alt="Error">
-          <p>Mens's Therapies</p>
+
+      <div id="bot">
+        <div>
+          <div>
+            <h1>Book Professionals from your Phone</h1>
+            <p>Enter Your mobile number to get App Download link</p>
+            <div id="phone">
+              <div>
+                <img src="./images/index/indianflag.jpg" alt="" />
+                <h3>+91</h3>
+              </div>
+
+              <div>
+                <input type="text" />
+              </div>
+              <div>
+                <button>Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="andimg">
+          <div>
+            <img src="./images/index/phone1.jpg" alt="Error" />
+          </div>
+          <div>
+            <img src="./images/index/phone2.jpg" alt="Error" />
+          </div>
+        </div>
       </div>
-  </div>
-    </div>
-<!-- center page -->
-    <h1 class="middle-heading">HOME SERVICES</h1>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul class="footer-list">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">UC impact</a></li>
+              <li><a href="#">terms & conditions</a></li>
+              <li><a href="#">reviews</a></li>
+              <li><a href="#">careers</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>serving in</h4>
+            <ul class="footer-list">
+              <li><a href="#">USA</a></li>
+              <li><a href="#">INDIA</a></li>
+              <li><a href="#">UAE</a></li>
+              <li><a href="#">SGP</a></li>
+              <li><a href="#">KSA</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>policies</h4>
+            <ul class="footer-list">
+              <li><a href="#">privacy</a></li>
+              <li><a href="#">anti discrimination</a></li>
+              <li><a href="#">partner welfare</a></li>
+              <li><a href="#">information security</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <img class="googlestore" src="./images/playstore.png" alt="Error" />
+            <img class="googlestore" src="./images/appstore.png" alt="Error" />
+          </div>
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This Website is made with
+            <i class="fa fa-heart" aria-hidden="true"></i> by
+            <a href="https://github.com/nikkikharkwal" target="_blank"
+              >Nikhilesh Singh .</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="./Scripts/index.js"></script>
 </html>

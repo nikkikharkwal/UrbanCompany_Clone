@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings Page</title>
+    <link rel="icon" href="./images/UC_titlelogo.png">
+    <link rel="stylesheet" href="./stylesheet/Bookings.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="nav" onclick="logo()">
+        <img
+          src="./images/urbanlogoDark.png"
+          alt=""
+        />
+      </div>
+      <div class="nav">
+        <div><h3>Blog</h3></div>
+        <div><h3 id="help-center">Help Center</h3></div>
+        <div><h3>My Bookings</h3></div>
+        <div>
+          <h3 id="log" onclick="logouttohome()">Logout</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="booking">
+      <h2>My Bookings</h2>
+      <div id="book">
+        <div onclick="colorone()" id="one">ONGOING</div>
+        <div onclick="colortwo()" id="two">HISTORY</div>
+      </div>
+    </div>
+
+    <div id="button">
+      <p>You dont have any active projects now</p>
+      <button id="btn" onclick="home()">BOOK A SERVICE</button>
+    </div>
+  </body>
+  <script src="./Scripts/Bookings.js"></script>
+</html>

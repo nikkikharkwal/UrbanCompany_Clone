@@ -1,0 +1,94 @@
+/* header {
+  position: absolute;
+  background-color: transparent;
+} */
+
+/* .custom-container{
+  width: 1224px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:wght@700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.bg-img {
+  min-height: 552px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("/images/bg-hero-banner.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3px;
+}
+.logo {
+  width: 132px;
+  height: 39px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  transition: .3s;
+  color: #039BE5;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+
+/* Sidenav bar */
+
+.sidenav {
+  height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 20px;
+}
+.closebtn {
+  padding-right: 110px;
+  padding-top: 26px;
+  text-decoration: none;
+}
+
+.sidenav img {
+  width: 55px;
+  height: 55px;
+}
+.sidenav > div {
+  display: flex;
+  justify-content: space-around;
+}
+.sidenav > div p,
+.sidenav > div i {
+  padding-top: 14px;
+}
