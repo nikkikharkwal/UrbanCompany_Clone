@@ -118,6 +118,7 @@ main a {
 
 .card-img {
   height: 21rem;
+  object-fit: contain;
 }
 
 .card-data,

@@ -83,6 +83,7 @@ nav ul li a:hover {
 .sidenav img {
   width: 55px;
   height: 55px;
+  object-fit: cover;
 }
 .sidenav > div {
   display: flex;

@@ -32,13 +32,37 @@ logo.addEventListener("click", () => {
 })
 
 // Side NAv Bar
+let sideNav = document.getElementById("mySidenav");
 
 document.getElementById("women-salon-services").addEventListener("click", openNav)
 function openNav() {
-  document.getElementById("mySidenav").style.width = "340px";
+  sideNav.classList.toggle('show-nav');
 }
 
 document.querySelector(".closebtn").addEventListener("click", closeNav)
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+ sideNav.classList.toggle('show-nav');
 }
+
+document.body.addEventListener('click',(e)=>{
+    // console.log(e.target)   
+     if(e.target === sideNav){
+        return;
+    }
+    // else{
+    //     console.log('dsfh')
+        // sideNav
+        // sideNav.classList.remove('show-nav');
+
+    // }
+
+});
+
+window.addEventListener('scroll',()=>{
+    if(window.scrollY=== 1220){
+        //add class to jo bhi hai vo
+    }
+    else{
+        // remove class
+    }
+})
